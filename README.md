@@ -1,0 +1,9 @@
+- Install eslint.
+	- `npm i eslint`
+- Download `eslint` plugin in editor(Visual Studio Code).
+- Create `.eslintrc.js` at root level. Add rules to that file.
+- Create `.eslintignore` and add `!.eslintrc.js` in there if you don't want to ignore this file from eslint rules. By default all `.` files are ignored by eslint.
+- To run `eslint`, add this to `script` in `package.json`: 
+	- `"lint": "eslint . --ext .js"` for `js` OR
+	- `"lint": "eslint ."` for all
+- To fix js, add this to `script` in `package.json` : `"lint:fix": "eslint . --ext .js --fix"`
