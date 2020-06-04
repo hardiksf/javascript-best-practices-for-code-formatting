@@ -46,6 +46,19 @@ module.exports = {
 
         'comma-spacing': ['error', { 'before': false, 'after': true }],
 
-        'no-multiple-empty-lines': ["error", { "max": 1, "maxBOF": 1 }],
+        'no-multiple-empty-lines': ['error', { 'max': 1, 'maxBOF': 1 }],
+
+        'prefer-const': ['error', {
+            'destructuring': 'any',
+            'ignoreReadBeforeAssign': false,
+        }],
+
+        'no-const-assign': 'error',
+
+        quotes: ['error', 'single', { 'allowTemplateLiterals': true }],
+
+        'no-new-object': 'error',
+
+        'eol-last': ['error', 'always'], // this rule enforces at least one newline (or absence thereof) at the end of non-empty files.
     },
 };
