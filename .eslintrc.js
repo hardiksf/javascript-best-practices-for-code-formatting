@@ -4,7 +4,7 @@ module.exports = {
         es6: true,
     },
     rules: {
-        strict: ['error', 'global'], // use strict mode
+        // strict: ['error', 'global'], // use strict mode
 
         'multiline-comment-style': ['error', 'starred-block'], // bare-block, starred-block are couple options
         'spaced-comment': ['error', 'always'],
